@@ -1,0 +1,208 @@
+body {
+  font-size: 14px;
+}
+
+caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+
+/* question */
+
+
+.question {
+  padding: 1em 1em 0.5em 5em;
+  background: #f0ffe6;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+}
+
+.question:before {
+  content: "Übungshäppchen";
+  clear: right;
+  display: block;
+  font-weight: bold;
+ }
+ 
+.question:after {
+  content: "\f059";
+  font-family: FontAwesome;
+  left:10px;
+  position:absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 45px;
+ }
+
+.rmdcomment {
+  padding: 1em 1em 0.5em 5em;
+  background: #f5f5f5;
+  position:relative;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.rmdcomment:before {
+    content: "\f075";
+    font-family: FontAwesome;
+    left:10px;
+    position:absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+ }
+ 
+.rmdinfo {
+  padding: 1em 1em 0.5em 5em;
+  background: #e6f0ff;
+  position:relative;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.rmdinfo:before {
+    content: "\f05a";
+    font-family: FontAwesome;
+    left:10px;
+    position:absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+ }
+
+.rmdalert {
+  padding: 1em 1em 0.5em 5em;
+  background: #ffe6f0;
+  position:relative;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.rmdalert:before {
+    content: "\f06a";
+    font-family: FontAwesome;
+    left:10px;
+    position:absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+ }
+ 
+
+ 
+.rmdexample {
+  padding: 1em 1em 0.5em 5em;
+  background: #f0ffe6;
+  position:relative;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.rmdexample:before {
+    content: "\f055";
+    font-family: FontAwesome;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+ }
+ 
+ .rmdoutcomes {
+  padding: 1em 1em 0.5em 5em;
+  background: #ffebcd;
+  position:relative;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.rmdoutcomes:before {
+    content: "\f4d8";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+ }
+ 
+.rmddef {
+  padding: 1em 1em 0.5em 5em;
+  background: #ffe1b4;
+  position:relative;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.rmddef:before {
+    content: "\f13d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 45px;
+ }
+ 
+.exercises {
+  clear: both;
+  list-style: none;
+}
+
+.exercises ol {
+   counter-reset: inst;
+}
+
+.exercises ol {
+    margin-left:-10px; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+.exercises ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 10px 0; /* Give each list item a left margin to make room for the numbers */
+    padding:30px 10px 0 20px; /* Add some spacing around the content: top, right, bottom, left */
+    list-style:none; /* Disable the normal item numbering */
+    border-top:2px solid #c9743d;
+    background:#f8ede6;
+    border-radius: 10px;
+}
+
+.exercises ol > li::before {
+  content: "Aufgabe " counter(inst);  /* Use the counter as content */
+  
+  counter-increment: inst 1; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-1em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    width:7em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:4px;
+    padding:1px;
+    border-top:2px solid #c9743d;
+    color:#fff;
+    background:#c9743d;
+    font-weight:bold;
+    font-family:"Helvetica Neue", Arial, sans-serif;
+    text-align:center;
+}
+ 

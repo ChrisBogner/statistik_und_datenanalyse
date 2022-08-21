@@ -1,0 +1,82 @@
+---
+bibliography: statistik_und_datenanalyse.bib
+---
+
+# Vorwort {.unnumbered}
+
+## Kurs
+
+In dieser Veranstaltung werden wir folgende Werkzeuge verwenden:
+
+**ILIAS**: die Online-Lernplattform der UzK. Entweder sind Sie bereits automatisch in dem Kurs registriert oder werden von mir per Hand angemeldet.
+
+**Campuswire**: die Chatplattform dient der allgemeinen Kommunikation und der Selbstorganisation des Lernens. Verwenden Sie diese, um Fragen mit Ihren Kommilitonen\*innen und mir zu diskutieren. Sie sollten eine Einladungsmail zu Campuswire erhalten haben.
+
+**Zoom**: die Videokonferenz-Software bleibt unser Notfall-Werkzeug, falls keine Präsenz möglich ist.
+
+## Lernziele
+
+:::{.callout-note}
+## Lernziele des Kurses
+-   Einfache Datenanalysen reporduzierbar durchführen
+-   Daten und Ergebnisse der Analysen darstellen
+-   Ergebnisse interpretieren und berichten
+:::
+
+## Sinn und Unsinn dieses Skripts {.unnumbered}
+
+Dieses Skript ist ein lebendiges Begleitdokument des Kurses. Es wird laufend angepasst und aktualisiert.
+
+## Inspiration, Quellen und Danksagung {.unnumbered}
+
+Dieses Skript baut stark auf folgenden freien Quellen auf:
+
+-   r4ds: @r4ds
+-   ggplot2: @Wickham2020
+-   ModernDive: @ModernDive
+-   Introduction to Modern Statistics: @IMS2021
+
+Den Autoren dieser Bücher gilt ein großer Dank für Ihren Beitrag zur `r fontawesome::fa("r-project", fill = "steelblue")`-Community `r fontawesome::fa("heart", fill = "red")`!
+
+## Reproduzierbarkeit {.unnumbered}
+
+Dieses Skript wurde in [RStudio](https://www.rstudio.com/products/rstudio/) mit [Quarto](https://quarto.org/) geschrieben und in `r R.version.string` gebaut. Folgende Pakete werden für die Beispiele und Übungen benötigt:
+
+```{r}
+#| echo: false
+# Dieser Code stammt aus dem ggplot2 Buch
+# https://github.com/hadley/ggplot2-book/blob/master/introduction.Rmd
+    deps <- desc::desc_get_deps()
+    pkgs <- sort(deps$package[deps$type == "Imports"])
+    pkgs2 <- strwrap(paste(encodeString(pkgs, quote = '"'), collapse = ", "), exdent = 2)
+    install <- paste0(
+      "install.packages(c(\n  ", 
+      paste(pkgs2, "\n", collapse = ""), 
+      "))"
+    )
+```
+
+```{r}
+#| echo: false
+#| results: asis
+# Dieser Code stammt aus dem ggplot2 Buch
+# https://github.com/hadley/ggplot2-book/blob/master/introduction.Rmd
+pkgs <- sessioninfo::package_info(pkgs, dependencies = FALSE)
+df <- tibble::tibble(
+  package = pkgs$package,
+  version = pkgs$ondiskversion,
+  source = gsub("@", "\\\\@", pkgs$source)
+)
+knitr::kable(df, format = "markdown")
+```
+
+Die komplette Information zur Session lautet:
+
+```{r}
+#| echo: false
+sessionInfo()
+```
+
+![](figures/Cc-by-nc-sa_icon.png){width="10%"}
+
+Dieses Skript ist lizenziert unter [Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International.](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de/)

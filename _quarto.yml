@@ -1,0 +1,37 @@
+project:
+  type: book
+  output-dir: docs
+
+book: 
+  title: "Statistik und Datenanalyse"
+  author: "Christina Bogner"
+  date: last-modified
+  lang: de
+  chapters: 
+    - index.qmd
+    - intro.qmd
+    - part: "DATEN ERKUNDEN"
+      chapters: 
+        - data.qmd
+        - visualisieren.qmd
+    - references.qmd
+  page-navigation: true
+  downloads: [pdf, epub]
+  sidebar:
+    style: docked
+    background: light
+    
+bibliography: statistik_und_datenanalyse.bib
+  
+format:
+  html:
+    theme: cosmo
+    code-copy: true
+    css: stat_style.css
+  pdf:
+    documentclass: scrreport
+    title: "Statistik und Datenanalyse"
+  epub:
+    title: "Statistik und Datenanalyse"
+
+

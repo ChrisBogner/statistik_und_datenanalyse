@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistik und Datenanalyse",
+    "section": "",
+    "text": "In dieser Veranstaltung werden wir folgende Werkzeuge verwenden:\nILIAS: die Online-Lernplattform der UzK. Entweder sind Sie bereits automatisch in dem Kurs registriert oder werden von mir per Hand angemeldet.\nCampuswire: die Chatplattform dient der allgemeinen Kommunikation und der Selbstorganisation des Lernens. Verwenden Sie diese, um Fragen mit Ihren Kommilitonen*innen und mir zu diskutieren. Sie sollten eine Einladungsmail zu Campuswire erhalten haben.\nZoom: die Videokonferenz-Software bleibt unser Notfall-Werkzeug, falls keine Präsenz möglich ist.\n\n\n\n\n\n\n\n\n\nLernziele des Kurses\n\n\n\n\nEinfache Datenanalysen reporduzierbar durchführen\nDaten und Ergebnisse der Analysen darstellen\nErgebnisse interpretieren und berichten\n\n\n\n\n\n\nDieses Skript ist ein lebendiges Begleitdokument des Kurses. Es wird laufend angepasst und aktualisiert.\n\n\n\nDieses Skript baut stark auf folgenden freien Quellen auf:\n\nr4ds: Wickham and Grolemund (2021)\nggplot2: Wickham (2020)\nModernDive: Ismay and Kim (2021)\nIntroduction to Modern Statistics: Çetinkaya-Rundel and Hardin (n.d.)\n\nDen Autoren dieser Bücher gilt ein großer Dank für Ihren Beitrag zur -Community !\n\n\n\nDieses Skript wurde in RStudio mit Quarto geschrieben und in R version 4.2.1 (2022-06-23) gebaut. Folgende Pakete werden für die Beispiele und Übungen benötigt:\n\n\n\n\n\n\n\n\n\n\n\n\npackage\nversion\nsource\n\n\n\n\ndabestr\n0.3.0\nGithub (ACCLAB/dabestr@8775899f7eba743a6a32bd2fdab5f57e79401fd6)\n\n\nemojifont\n0.5.5\nCRAN (R 4.2.0)\n\n\nfontawesome\n0.3.0\nCRAN (R 4.2.1)\n\n\ngapminder\n0.3.0\nCRAN (R 4.2.0)\n\n\ninfer\n1.0.0\nCRAN (R 4.2.0)\n\n\nlubridate\n1.8.0\nCRAN (R 4.2.0)\n\n\nmoderndive\n0.5.3\nCRAN (R 4.2.0)\n\n\ntidyverse\n1.3.1\nCRAN (R 4.2.0)\n\n\n\n\nDie komplette Information zur Session lautet:\n\n\nR version 4.2.1 (2022-06-23)\nPlatform: x86_64-pc-linux-gnu (64-bit)\nRunning under: Ubuntu 22.04.1 LTS\n\nMatrix products: default\nBLAS:   /usr/lib/x86_64-linux-gnu/atlas/libblas.so.3.10.3\nLAPACK: /usr/lib/x86_64-linux-gnu/atlas/liblapack.so.3.10.3\n\nlocale:\n [1] LC_CTYPE=de_DE.UTF-8       LC_NUMERIC=C              \n [3] LC_TIME=de_DE.UTF-8        LC_COLLATE=de_DE.UTF-8    \n [5] LC_MONETARY=de_DE.UTF-8    LC_MESSAGES=de_DE.UTF-8   \n [7] LC_PAPER=de_DE.UTF-8       LC_NAME=C                 \n [9] LC_ADDRESS=C               LC_TELEPHONE=C            \n[11] LC_MEASUREMENT=de_DE.UTF-8 LC_IDENTIFICATION=C       \n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] rstudioapi_0.13   knitr_1.39        magrittr_2.0.3    R6_2.5.1         \n [5] rlang_1.0.2       fastmap_1.1.0     fansi_1.0.3       highr_0.9        \n [9] stringr_1.4.0     tools_4.2.1       xfun_0.31         sessioninfo_1.2.2\n[13] utf8_1.2.2        cli_3.3.0         htmltools_0.5.2   ellipsis_0.3.2   \n[17] yaml_2.3.5        digest_0.6.29     rprojroot_2.0.3   tibble_3.1.7     \n[21] fontawesome_0.3.0 lifecycle_1.0.1   crayon_1.5.1      vctrs_0.4.1      \n[25] htmlwidgets_1.5.4 glue_1.6.2        evaluate_0.15     rmarkdown_2.14   \n[29] stringi_1.7.6     compiler_4.2.1    pillar_1.7.0      desc_1.4.1       \n[33] jsonlite_1.8.0    pkgconfig_2.0.3  \n\n\n\nDieses Skript ist lizenziert unter Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International.\n\n\n\n\nÇetinkaya-Rundel, Mine, and Johanna Hardin. n.d. Introduction to Modern Statistics. https://openintro-ims.netlify.app/.\n\n\nIsmay, Chester, and Albert Y. Kim. 2021. ModernDive: Statistical Inference via Data Science. https://moderndive.com/.\n\n\nWickham, Hadley. 2020. Ggplot2: Elegant Graphics for Data Analysis. 3rd, in progress.\n\n\nWickham, Hadley, and Garrett Grolemund. 2021. R for Data Science. https://r4ds.had.co.nz/."
+  },
+  {
+    "objectID": "data.html#wo-kommen-daten-her",
+    "href": "data.html#wo-kommen-daten-her",
+    "title": "2  Daten",
+    "section": "2.2 Wo kommen Daten her?",
+    "text": "2.2 Wo kommen Daten her?\n\n2.2.1 Datenerhebung\n\nOf the 224 patients in the treatment group, 45 had a stroke by the end of the first year. Using these two numbers, compute the proportion of patients in the treatment group who had a stroke by the end of their first year. (Note: answers to all Guided Practice exercises are provided in footnotes!)1"
+  },
+  {
+    "objectID": "data.html#testen-sie-sich-selbst",
+    "href": "data.html#testen-sie-sich-selbst",
+    "title": "2  Daten",
+    "section": "2.3 Testen Sie sich selbst",
+    "text": "2.3 Testen Sie sich selbst"
+  },
+  {
+    "objectID": "data.html#übungen",
+    "href": "data.html#übungen",
+    "title": "2  Daten",
+    "section": "2.4 Übungen",
+    "text": "2.4 Übungen"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Bibliographie",
+    "section": "",
+    "text": "Çetinkaya-Rundel, Mine, and Johanna Hardin. n.d. Introduction to\nModern Statistics. https://openintro-ims.netlify.app/.\n\n\nIsmay, Chester, and Albert Y. Kim. 2021. ModernDive:\nStatistical Inference via Data Science.\nhttps://moderndive.com/.\n\n\nWickham, Hadley. 2020. Ggplot2: Elegant Graphics for\nData Analysis. 3rd, in progress.\n\n\nWickham, Hadley, and Garrett Grolemund. 2021. R for Data\nScience. https://r4ds.had.co.nz/."
+  }
+]

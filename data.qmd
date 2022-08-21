@@ -1,0 +1,20 @@
+# Daten
+
+## Was sind Daten?
+
+
+## Wo kommen Daten her?
+### Datenerhebung
+
+:::{.question}
+Of the 224 patients in the treatment group, 45 had a stroke by the end of the first year.
+Using these two numbers, compute the proportion of patients in the treatment group who had a stroke by the end of their first year.
+(Note: answers to all Guided Practice exercises are provided in footnotes!)[^data-hello-1]
+:::
+
+[^data-hello-1]: The proportion of the 224 patients who had a stroke within 365 days: $45/224 = 0.20.$
+
+
+## Testen Sie sich selbst
+
+## Übungen
