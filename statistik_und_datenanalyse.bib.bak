@@ -1,3 +1,55 @@
+@book{Zuur2009,
+  title = {A Beginner's Guide to {{R}}},
+  author = {Zuur, A. F. and Ieno, E. and Meesters, E.},
+  year = {2009},
+  publisher = {{Springer}},
+  owner = {Chris},
+  timestamp = {2011.04.28},
+  file = {/media/Daten/Chrissies Dateien/Literatur/Buecher/A BeginnerS Guide To R.pdf}
+}
+
+
+
+@misc{survey:raiseTaxes:2015,
+  author = {{Public Policy Polling}},
+  title = {{Americans on College Degrees, Classic Literature, the Seasons, and More, data collected Feb 20-22, 2015}},
+  year = {2015},
+  url = {http://www.openintro.org/redirect.php?go=textbook-PPP_30215}
+}
+
+@article{Turnbull+Brown+Hu:1974,
+  title = {{Survivorship of Heart Transplant Data}},
+  author = {Turnbull, B. and Brown, B. and Hu, M.},
+  journal = {Journal of the American Statistical Association},
+  volume = {69},
+  pages = {74-80},
+  year = {1974},
+  doi = {10.1080/01621459.1974.10480130}
+}
+
+@misc{survey:blmWaPoScar:2020,
+  author = {{Washington Post}},
+  title = {{Washington Post-Schar School national poll, data collected June 2-7, 2020}},
+  year = {2020},
+  url = {http://www.openintro.org/redirect.php?go=exercise-wapo-2020-blm-poll},
+  note = {Retrieved September 5, 2020}
+}
+
+@book{Mittag2017,
+  title = {{Statistik}},
+  author = {Mittag, Hans-Joachim},
+  year = {2017},
+  series = {{Springer-Lehrbuch}},
+  publisher = {{Springer Berlin Heidelberg}},
+  address = {{Berlin, Heidelberg}},
+  doi = {10.1007/978-3-662-55321-3},
+  isbn = {978-3-662-55320-6 978-3-662-55321-3},
+  langid = {ngerman},
+  file = {/media/Daten/Chrissies Dateien/Literatur/Buecher/Statistik_Mittag.pdf}
+}
+
+
+
 @book{Sauer2019,
   title = {{Moderne Datenanalyse mit R: Daten einlesen, aufbereiten, visualisieren, modellieren und kommunizieren}},
   shorttitle = {{Moderne Datenanalyse mit R}},
@@ -76,9 +128,6 @@ url = {https://bookdown.org/yihui/rmarkdown/}
 }
 
 
-
-
-
 @article{Knuth1984,
   title = {Literate {{Programming}}},
   author = {Knuth, D. E.},
@@ -108,14 +157,13 @@ url = {https://bookdown.org/yihui/rmarkdown/}
 }
 
 
-@Book{Wickham2020,
-  author     = {Wickham, Hadley},
-  title      = {ggplot2: {{Elegant Graphics}} for {{Data Analysis}}},
-  year       = {2020},
-  edition    = {3rd, in progress},
-  abstract   = {Master ggplot2 and the rich grammar that underlies it.},
+@book{Wickham2020,
+  title = {ggplot2: {{Elegant Graphics}} for {{Data Analysis}}},
   shorttitle = {ggplot2},
-  url        = {https://ggplot2-book.org/},
+  author = {Wickham, Hadley},
+  year = {2020},
+  edition = {3rd, in progress},
+  abstract = {Master ggplot2 and the rich grammar that underlies it.}
 }
 
 
@@ -165,14 +213,12 @@ url = {https://bookdown.org/yihui/rmarkdown/}
 }
 
 
-
-
-@Book{r4ds_old,
-  author   = {Wickham, Hadley and Grolemund, Garrett},
-  title    = {R for {{Data Science}}},
-  year     = {2021},
+@book{r4ds,
+  title = {R for {{Data Science}}},
+  author = {Wickham, Hadley and Grolemund, Garrett},
+  year = {2021},
   abstract = {This book will teach you how to do data science with R: You'll learn how to get your data into R, get it into the most useful structure, transform it, visualise it and model it. In this book, you will find a practicum of skills for data science. Just as a chemist learns how to clean test tubes and stock a lab, you'll learn how to clean data and draw plots\textemdash and many other things besides. These are the skills that allow data science to happen, and here you will find the best practices for doing each of these things with R. You'll learn how to use the grammar of graphics, literate programming, and reproducible research to save time. You'll also learn how to manage cognitive resources to facilitate discoveries when wrangling, visualising, and exploring data.},
-  url      = {https://r4ds.had.co.nz/},
+url = {https://r4ds.had.co.nz/}
 }
 
 
@@ -307,22 +353,78 @@ url = {https://bookdown.org/yihui/rmarkdown/}
 
 
 
-
-
-
 @book{IMS2021,
 	title = {Introduction to Modern Statistics},
 	author = {{Çetinkaya-Rundel}, Mine and Hardin, Johanna},
+	year = {2022},
 	url = {https://openintro-ims.netlify.app/},
 	note = {Citation Key: IMS2021},
 	langid = {en}
 }
 
-@Book{r4ds,
-  author = {Wickham, Hadley and {\c C}etinkaya-Rundel, Mine and Grolemund, Garrett},
-  title  = {R for {{Data Science}} (2e)},
-  year   = {2023},
-  url    = {https://r4ds.hadley.nz/},
+@Article{Gorman2014,
+  author  = {Gorman, Kristen B. and Williams, Tony D. and Fraser, William R.},
+  journal = {PLoS ONE},
+  title   = {Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)},
+  year    = {2014},
+  month   = {03},
+  number  = {3},
+  pages   = {e90081},
+  volume  = {9},
+  date    = {2014-03-05},
+  doi     = {10.1371/journal.pone.0090081},
+  editor  = {Chiaradia, {André}},
+  langid  = {en},
+  url     = {http://dx.doi.org/10.1371/journal.pone.0090081},
+}
+
+@Misc{rbox,
+  howpublished = {https://datasciencebox.org/},
+  note         = {Version 1.0},
+  title        = {Data {{Science}} in a {{Box}}},
+  year         = {2020},
+  abstract     = {How can we effectively and efficiently teach data science to students with little to no background in computing and statistical thinking?},
+  langid       = {english},
+}
+
+@Article{Heinz2003,
+  author     = {Heinz, Grete and Peterson, Louis J. and Johnson, Roger W. and Kerk, Carter J.},
+  journal    = {Journal of Statistics Education},
+  title      = {Exploring {{Relationships}} in {{Body Dimensions}}},
+  year       = {2003},
+  issn       = {null},
+  month      = jan,
+  number     = {2},
+  pages      = {null},
+  volume     = {11},
+  abstract   = {Body girth measurements and skeletal diameter measurements, as well as age, weight, height and gender, are given for 507 physically active individuals \textendash{} 247 men and 260 women. These data can be used to provide statistics students practice in the art of data analysis. Such analyses range from simple descriptive displays to more complicated multivariate analyses such as multiple regression and discriminant analysis.},
+  annotation = {\_eprint: https://doi.org/10.1080/10691898.2003.11910711},
+  doi        = {10.1080/10691898.2003.11910711},
+  file       = {/media/Daten/Chrissies Dateien/Literatur/Zotero/storage/5LKTPRY5/Heinz et al. - 2003 - Exploring Relationships in Body Dimensions.pdf},
+  keywords   = {Anthropometry, Discriminant analysis, Ergonomics, Forensic science, Multiple regression},
+  publisher  = {{Taylor \& Francis}},
+}
+
+@Misc{deepl,
+  howpublished = {https://www.DeepL.com/translator},
+  title        = {{{DeepL Translate}}: {{The}} World's Most Accurate Translator},
+  abstract     = {Translate texts \& full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day.},
+  langid       = {english},
+  shorttitle   = {{{DeepL Translate}}},
+}
+
+@Article{Rosen1974,
+  author   = {Rosen, Benson and Jerdee, Thomas H.},
+  journal  = {Journal of Applied Psychology},
+  title    = {Influence of Sex Role Stereotypes on Personnel Decisions.},
+  year     = {1974},
+  issn     = {0021-9010},
+  number   = {1},
+  pages    = {9--14},
+  volume   = {59},
+  doi      = {10.1037/h0035834},
+  file     = {/media/Daten/Chrissies Dateien/Literatur/Statistics/Rosen1974.pdf},
+  language = {en},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
